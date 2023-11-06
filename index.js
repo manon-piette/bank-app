@@ -15,6 +15,7 @@ function update_size() {
 function load(){
     navbar_load();
     update_size();
+    scroll();
 }
 
 

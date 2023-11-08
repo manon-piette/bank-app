@@ -27,7 +27,7 @@ img{
 }
 #home .cont{
     background-color : black;
-    width            : calc(100% - 60px);
+    width            : 100%;
     height           : calc(100vh);
     margin           : 0 auto;
     position: sticky;
@@ -44,7 +44,12 @@ img{
 #home img{
     width: 100% !important;
 }
-
+#home img:first-child{
+    opacity: 0;
+}
+#home img:last-child{
+    opacity: 0;
+}
 /*#endregion*/
 
 /*#region TEXT*/

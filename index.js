@@ -5,7 +5,7 @@ function update_size() {
     text_p.style.top = `${window.innerHeight / 2 - (text_p.clientHeight / 2)}px`
 
     document.querySelector("#text img").style.transform = `translateX(-50%) translateY( calc(100% - ${text_p.clientHeight - 100}px))`;
-    console.log(document.querySelector("#text img").clientHeight - text_p.clientHeight - 100)
+    console.log(document.querySelector("#text img").clientHeight - text_p.clientHeight*1.1)
     document.querySelector("#sep-1").style.height = `${document.querySelector("#text img").clientHeight - text_p.clientHeight + 100}px`
 
     document.querySelector("#end img:last-child").style.height = `${document.querySelector("#end img:first-child").clientHeight * 0.82}px`;
@@ -31,6 +31,8 @@ function scroll(){
     // console.log(arrived)
     document.querySelector("#home div.cont").style.borderRadius = `${30*(arrived_2)}px`
     document.querySelector("#home div.cont").style.width = `calc(100% - ${60*(arrived_2)}px)`
+
+
     document.querySelector("#home div.cont").style.height = `calc(100vh - ${60*(arrived_2)}px)`
     document.querySelector("#home div.cont").style.top = `${30*(arrived_2)}px`
 
